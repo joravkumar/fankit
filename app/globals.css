@@ -253,12 +253,13 @@ nav {
 
 .hero-stats {
   display: flex;
-  gap: 48px;
+  gap: 0;
   margin-top: 80px;
   padding-top: 40px;
   border-top: 1px solid var(--white-faint);
   animation: fadeUp 0.7s 0.4s ease both;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .stat-item {
@@ -1123,7 +1124,7 @@ footer {
 }
 
 /* ─── FAQ ─── */
-.faq-list { margin-top: 48px; max-width: 720px; }
+.faq-list { margin-top: 48px; }
 .faq-item { border-bottom: 1px solid var(--white-faint); }
 .faq-q {
   width: 100%;

@@ -18,8 +18,8 @@ export default function OGImage() {
           fontFamily: 'sans-serif',
         }}
       >
-        <div style={{ fontSize: 96, color: '#f0ede8', letterSpacing: '0.05em', lineHeight: 1 }}>
-          Fan<span style={{ color: '#1aab78' }}>Kit</span>
+        <div style={{ fontSize: 96, color: '#f0ede8', letterSpacing: '0.05em', lineHeight: 1, display: 'flex' }}>
+          <span>Fan</span><span style={{ color: '#1aab78' }}>Kit</span>
         </div>
         <div style={{ fontSize: 30, color: '#a8a49e', marginTop: 20, fontWeight: 300 }}>
           Creator Merch, Done For You
