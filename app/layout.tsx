@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${dmSans.variable}`}>
+      <body className={`${bebasNeue.variable} ${dmSans.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>
