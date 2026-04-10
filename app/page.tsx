@@ -106,7 +106,7 @@ export default function Home() {
       const msg = encodeURIComponent(
         `Hi FanKit! I'd love a free merch mockup.\n\nName: ${name}\nInstagram: ${handle}${phone ? '\nPhone: ' + phone : ''}`,
       )
-      window.open(`https://wa.me/918054342384?text=${msg}`, '_blank')
+      window.open(`https://wa.me/91XXXXXXXXXX?text=${msg}`, '_blank')
     }
 
     ctaForm?.addEventListener('submit', handleCtaSubmit)
@@ -176,13 +176,12 @@ export default function Home() {
 
       {/* ─── HERO ─── */}
       <section className="hero">
-        <div className="hero-eyebrow">India's creator merch studio</div>
+        <div className="hero-eyebrow">made with love for indian creators ✨</div>
         <h1 className="hero-headline">
-          YOUR FANS<br />WANT TO<br />WEAR <span className="accent">YOUR</span><br />VIBE.
+          LET&apos;S TURN<br />YOUR AUDIENCE<br />INTO YOUR<br /><span className="accent">BIGGEST FANS.</span>
         </h1>
         <p className="hero-sub">
-          Making content is already a full-time job. Your merch store shouldn't be
-          a second one. We build it, run it, and pay you — you just keep posting.
+          You make the content. We&apos;ll handle the merch — design, store, shipping, and everything in between. You just keep creating. 🎨
         </p>
         <div className="hero-actions">
           <a href="#cta" className="btn-primary">Start for free →</a>
@@ -199,11 +198,11 @@ export default function Home() {
           </div>
           <div className="stat-item">
             <div className="stat-num">₹0</div>
-            <div className="stat-label">Setup cost to start</div>
+            <div className="stat-label">No setup cost</div>
           </div>
           <div className="stat-item">
             <div className="stat-num">4.5<span>M</span></div>
-            <div className="stat-label">Indian creators, no merch partner</div>
+            <div className="stat-label">Creators waiting for this</div>
           </div>
         </div>
       </section>
@@ -264,10 +263,10 @@ export default function Home() {
 
       {/* ─── HOW IT WORKS ─── */}
       <section className="how" id="how">
-        <div className="section-label">The process</div>
-        <h2 className="section-headline reveal">FOUR STEPS. ZERO HEADACHE.</h2>
+        <div className="section-label">the process</div>
+        <h2 className="section-headline reveal">Four steps.<br />You&apos;ll love how easy this is.</h2>
         <p className="section-sub reveal">
-          From DM to your first sale in under a week.
+          From your first message to your first sale — in under a week.
         </p>
 
         <div className="how-grid">
@@ -275,44 +274,43 @@ export default function Home() {
             <div className="step reveal">
               <div className="step-num">01</div>
               <div className="step-content">
-                <div className="step-title">WE DESIGN YOUR MERCH</div>
+                <div className="step-title">We design your merch</div>
                 <div className="step-desc">
                   Our designer crafts 6–8 products around your content: your
                   catchphrases, your aesthetic, your vibe. Not generic templates.
-                  Actual merch your audience will want.
+                  Actual merch your audience will want to wear.
                 </div>
               </div>
             </div>
             <div className="step reveal">
               <div className="step-num">02</div>
               <div className="step-content">
-                <div className="step-title">WE BUILD YOUR STORE</div>
+                <div className="step-title">We build your store</div>
                 <div className="step-desc">
                   Your own branded store at{' '}
                   <span className="domain-pill">merch.<em>yourname</em>.in</span>. Fully set up with
-                  print-on-demand fulfillment and Indian payments including UPI and COD.
+                  print-on-demand fulfillment and Indian payments including UPI and COD. Ready to sell from day one.
                 </div>
               </div>
             </div>
             <div className="step reveal">
               <div className="step-num">03</div>
               <div className="step-content">
-                <div className="step-title">YOU POST ONCE</div>
+                <div className="step-title">You post once</div>
                 <div className="step-desc">
                   Tell your audience the store is live. Two posts minimum. Your
-                  community converts because they trust you, and they've been
-                  waiting for this.
+                  community converts because they trust you — and honestly, they&apos;ve been waiting for this.
                 </div>
               </div>
             </div>
             <div className="step reveal">
               <div className="step-num">04</div>
               <div className="step-content">
-                <div className="step-title">WE HANDLE EVERYTHING ELSE</div>
+                <div className="step-title">We handle everything else</div>
                 <div className="step-desc">
                   Orders come in. We print, pack, and ship. You get 60% of every
-                  sale in your account by the 5th of every month. Weekly earnings
-                  update on WhatsApp.
+                  sale deposited by the 5th of every month. Weekly earnings
+                  update on WhatsApp. 🎉
                 </div>
               </div>
             </div>
@@ -325,11 +323,11 @@ export default function Home() {
             </div>
             <div className="split-row">
               <div>
-                <div className="split-pct" style={{color: 'var(--teal)'}}>60%</div>
+                <div className="split-pct" style={{color: 'var(--coral)'}}>60%</div>
                 <div className="split-who">Your earnings</div>
               </div>
               <div style={{textAlign: 'right'}}>
-                <div className="split-pct" style={{color: 'var(--white-dim)'}}>40%</div>
+                <div className="split-pct" style={{color: 'var(--charcoal-dim)'}}>40%</div>
                 <div className="split-who">FanKit</div>
               </div>
             </div>
@@ -350,7 +348,7 @@ export default function Home() {
               style={{
                 marginTop: '28px',
                 paddingTop: '24px',
-                borderTop: '1px solid var(--white-faint)',
+                borderTop: '1px solid var(--charcoal-faint)',
               }}
             >
               <div className="split-label" style={{marginBottom: '8px'}}>
@@ -366,7 +364,7 @@ export default function Home() {
               </div>
               <div className="split-row">
                 <div className="split-who">Your 60% earnings</div>
-                <div style={{fontWeight: 500, fontSize: '14px', color: 'var(--teal)'}}>
+                <div style={{fontWeight: 500, fontSize: '14px', color: 'var(--coral)'}}>
                   ₹17,970
                 </div>
               </div>
@@ -377,17 +375,16 @@ export default function Home() {
 
       {/* ─── WHY FANKIT ─── */}
       <section id="why">
-        <div className="section-label">Why FanKit</div>
-        <h2 className="section-headline reveal">BUILT FOR INDIAN CREATORS.</h2>
+        <div className="section-label">why fankit</div>
+        <h2 className="section-headline reveal">Built for Indian creators.<br />With love. 🇮🇳</h2>
         <p className="section-sub reveal">
-          Not a global platform retrofitted for India. Built here, from scratch,
-          for this market.
+          Not a global platform trying to fit India. Built here, for here, by people who get it.
         </p>
 
         <div className="why-grid reveal">
           <div className="why-card">
             <div className="why-icon">🎨</div>
-            <div className="why-title">CUSTOM DESIGN</div>
+            <div className="why-title">Custom Design</div>
             <div className="why-desc">
               Every design is made for you specifically. Your catchphrases, your
               aesthetic, your community identity. Not a Canva template.
@@ -395,16 +392,14 @@ export default function Home() {
           </div>
           <div className="why-card">
             <div className="why-icon">📦</div>
-            <div className="why-title">NOT YOUR PROBLEM</div>
+            <div className="why-title">Not Your Problem</div>
             <div className="why-desc">
-              Domain setup, store config, printing, packaging, courier, returns,
-              COD reconciliation, GST filing. None of it. Not a single parcel
-              ever passes through your hands.
+              Printing, packaging, shipping, returns, COD handling, GST filing. All on us. You never touch a single parcel.
             </div>
           </div>
           <div className="why-card">
             <div className="why-icon">💸</div>
-            <div className="why-title">UPI + COD READY</div>
+            <div className="why-title">UPI + COD Ready</div>
             <div className="why-desc">
               Your store accepts UPI, cards, net banking, and Cash on Delivery.
               Because your audience pays the Indian way.
@@ -412,7 +407,7 @@ export default function Home() {
           </div>
           <div className="why-card">
             <div className="why-icon">⚡</div>
-            <div className="why-title">LIVE IN 5 DAYS</div>
+            <div className="why-title">Live in 5 Days</div>
             <div className="why-desc">
               From your first DM to a live store: 5 days. No waiting. No
               back-and-forth. Designed, built, and ready to launch.
@@ -420,15 +415,15 @@ export default function Home() {
           </div>
           <div className="why-card">
             <div className="why-icon">📊</div>
-            <div className="why-title">WEEKLY REPORTS</div>
+            <div className="why-title">Weekly Reports</div>
             <div className="why-desc">
               Every Monday you get your order count, total earnings, and
-              top-selling product on WhatsApp. No dashboard login needed.
+              top-selling product on WhatsApp. No dashboard needed. 😊
             </div>
           </div>
           <div className="why-card">
             <div className="why-icon">🔗</div>
-            <div className="why-title">YOUR OWN DOMAIN</div>
+            <div className="why-title">Your Own Domain</div>
             <div className="why-desc">
               Your store lives at{' '}
               <span className="domain-pill">merch.<em>yourname</em>.in</span>, not on some marketplace
@@ -440,8 +435,8 @@ export default function Home() {
 
       {/* ─── STORE MOCKUP ─── */}
       <section className="mockup-section">
-        <div className="section-label">What you get</div>
-        <h2 className="section-headline reveal">YOUR STORE,<br />READY TO SELL.</h2>
+        <div className="section-label">what you get</div>
+        <h2 className="section-headline reveal">Your store,<br />ready to sell. 🛍️</h2>
         <p className="section-sub reveal">
           This is what your audience sees. Fully branded, your domain, your products.
         </p>
@@ -479,13 +474,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className="store-note reveal">Designs, branding, and store name are all yours — we build it around your content.</p>
+        <p className="store-note reveal">Designs, branding, and store name are all yours. We build it around your content.</p>
       </section>
 
       {/* ─── NICHES ─── */}
       <section className="niche" id="niches">
-        <div className="section-label">Who we work with</div>
-        <h2 className="section-headline reveal">EVERY NICHE.<br />ONE PLATFORM.</h2>
+        <div className="section-label">who we work with</div>
+        <h2 className="section-headline reveal">Every niche.<br />One partner. 🤝</h2>
 
         <div className="niche-grid reveal">
           <div className="niche-card">
@@ -543,12 +538,12 @@ export default function Home() {
 
       {/* ─── NUMBERS ─── */}
       <section className="numbers">
-        <div className="section-label">The market</div>
+        <div className="section-label">the market</div>
         <h2 className="section-headline reveal">
-          BIG MARKET.<br />ZERO COMPETITION.
+          Big market.<br />And we&apos;re just getting started. 🚀
         </h2>
         <p className="section-sub reveal">
-          India's creator economy is exploding. Nobody is doing this for them.
+          India&apos;s creator economy is exploding. Nobody is doing this for them.
         </p>
 
         <div className="numbers-grid reveal">
@@ -573,8 +568,8 @@ export default function Home() {
 
       {/* ─── PRICING ─── */}
       <section id="pricing">
-        <div className="section-label">Pricing</div>
-        <h2 className="section-headline reveal">START FREE.<br />GROW WITH US.</h2>
+        <div className="section-label">pricing</div>
+        <h2 className="section-headline reveal">Start free.<br />Grow with us. 💛</h2>
         <p className="section-sub reveal">
           No monthly fees. No subscriptions. We only earn when you earn.
         </p>
@@ -600,7 +595,7 @@ export default function Home() {
             <div className="price-tier">Tier 2</div>
             <div className="price-name">Standard</div>
             <div className="price-amount">₹4,999</div>
-            <div className="price-sub">One-time setup fee, no monthly cost</div>
+            <div className="price-sub">One-time setup, no monthly cost</div>
             <div className="price-divider"></div>
             <div className="price-feature">Everything in Free pilot</div>
             <div className="price-feature">8 custom product designs</div>
@@ -616,7 +611,7 @@ export default function Home() {
             <div className="price-tier">Tier 3</div>
             <div className="price-name">Premium</div>
             <div className="price-amount">₹12,999</div>
-            <div className="price-sub">One-time setup fee, no monthly cost</div>
+            <div className="price-sub">One-time setup, no monthly cost</div>
             <div className="price-divider"></div>
             <div className="price-feature">Everything in Standard</div>
             <div className="price-feature">2 seasonal design drops per year</div>
@@ -625,19 +620,19 @@ export default function Home() {
             <div className="price-feature">Custom packaging design</div>
             <div className="price-feature">Dedicated WhatsApp support</div>
             <div className="price-split">65% yours</div>
-            <div className="price-split-label">you get more at premium</div>
+            <div className="price-split-label">you keep more at premium 🎉</div>
           </div>
         </div>
       </section>
 
       {/* ─── FAQ ─── */}
       <section id="faq">
-        <div className="section-label">FAQ</div>
-        <h2 className="section-headline reveal">GOOD QUESTIONS.<br />STRAIGHT ANSWERS.</h2>
+        <div className="section-label">got questions</div>
+        <h2 className="section-headline reveal">Good questions.<br />Straight answers. 👋</h2>
         <div className="faq-list reveal">
           <div className="faq-item">
             <button className="faq-q">What if my store gets zero sales? <span className="faq-icon">+</span></button>
-            <div className="faq-a">You don't pay us anything. We only earn when you earn — 40% of each sale. If nothing sells, you owe nothing. That's why we're selective about who we take on: we only work with creators whose audience is already engaged.</div>
+            <div className="faq-a">We&apos;re in this together — we only earn when you earn. 40% of each sale is ours, and if nothing sells, you owe nothing. That&apos;s why we&apos;re selective about who we take on: we only work with creators whose audience is already engaged.</div>
           </div>
           <div className="faq-item">
             <button className="faq-q">Who handles returns and complaints? <span className="faq-icon">+</span></button>
@@ -645,19 +640,19 @@ export default function Home() {
           </div>
           <div className="faq-item">
             <button className="faq-q">What about GST and taxes? <span className="faq-icon">+</span></button>
-            <div className="faq-a">We handle GST filing on all orders. You receive your 60% earnings as a clean payout by the 5th of every month. We'll share a simple monthly statement for your own records.</div>
+            <div className="faq-a">We handle GST filing on all orders. You receive your 60% earnings as a clean payout by the 5th of every month. We&apos;ll share a simple monthly statement for your own records.</div>
           </div>
           <div className="faq-item">
             <button className="faq-q">Can I see what my merch will look like before going live? <span className="faq-icon">+</span></button>
-            <div className="faq-a">Yes. Before anything is published, we'll share high-quality mockups of every product. You approve the designs, request changes, and only go live when you're happy. No surprises.</div>
+            <div className="faq-a">Yes. Before anything is published, we&apos;ll share high-quality mockups of every product. You approve the designs, request changes, and only go live when you&apos;re happy. No surprises.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">What's the minimum follower count to apply? <span className="faq-icon">+</span></button>
-            <div className="faq-a">We don't have a strict follower minimum — we care more about engagement than reach. A creator with 10K highly engaged followers will outsell one with 200K passive ones. DM us and we'll tell you honestly if we think it'll work.</div>
+            <button className="faq-q">What&apos;s the minimum follower count to apply? <span className="faq-icon">+</span></button>
+            <div className="faq-a">We don&apos;t have a strict follower minimum — we care more about engagement than reach. A creator with 10K highly engaged followers will outsell one with 200K passive ones. DM us and we&apos;ll tell you honestly if we think it&apos;ll work.</div>
           </div>
           <div className="faq-item">
             <button className="faq-q">Do I need to hold any stock? <span className="faq-icon">+</span></button>
-            <div className="faq-a">Never. Every item is printed and shipped only when an order comes in. No inventory, no upfront stock cost, no risk. You couldn't end up sitting on unsold boxes even if you tried.</div>
+            <div className="faq-a">Never. Every item is printed and shipped only when an order comes in. No inventory, no upfront stock cost, no risk. You couldn&apos;t end up sitting on unsold boxes even if you tried.</div>
           </div>
         </div>
       </section>
@@ -665,11 +660,11 @@ export default function Home() {
       {/* ─── CTA ─── */}
       <section className="cta-section" id="cta">
         <h2 className="cta-headline">
-          YOUR AUDIENCE<br />IS <span className="accent">WAITING.</span>
+          Ready to start?<br /><span className="accent">We&apos;d love to<br />work with you.</span>
         </h2>
         <p className="cta-sub">
-          Drop your details and we'll send you a free mockup of what your merch
-          could look like. No commitment needed.
+          Drop your details and we&apos;ll send you a free mockup of what your merch
+          could look like. No commitment needed. 😊
         </p>
         <form className="cta-form" id="ctaForm">
           <div className="form-row">
@@ -678,11 +673,11 @@ export default function Home() {
           </div>
           <input className="cta-input" type="tel" id="ctaPhone" placeholder="WhatsApp number" />
           <button type="submit" className="btn-primary" style={{width: '100%', justifyContent: 'center'}}>Get my free mockup →</button>
-          <p className="cta-form-note">We'll reply within 24 hours on WhatsApp or Instagram.</p>
+          <p className="cta-form-note">We&apos;ll reply within 24 hours on WhatsApp or Instagram.</p>
         </form>
         <div className="cta-actions">
           <a href="https://instagram.com/fankit.in" target="_blank" rel="noopener noreferrer" className="btn-secondary">DM on Instagram</a>
-          <a href="https://wa.me/918054342384" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp us</a>
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp us</a>
         </div>
       </section>
 
@@ -699,7 +694,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-        <div className="footer-copy">© 2026 FanKit. Made in India.</div>
+        <div className="footer-copy">© 2026 FanKit. made with love in India. 🧡</div>
       </footer>
     </>
   )

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Bebas_Neue, DM_Sans } from 'next/font/google'
+import { Nunito, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const bebasNeue = Bebas_Neue({
-  weight: '400',
+const nunito = Nunito({
   subsets: ['latin'],
-  variable: '--font-bebas-neue',
+  weight: ['700', '800', '900'],
+  variable: '--font-nunito',
   display: 'swap',
 })
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://fankit.in'),
   title: 'FanKit: Creator Merch, Done For You',
   description:
-    'FanKit builds and runs custom merch stores for Indian creators. You post. We handle design, store, shipping, everything. 60% of revenue is yours.',
+    'FanKit is your creative merch partner. We design, build, and run your merch store — so you can focus on making content you love.',
   openGraph: {
     title: 'FanKit: Creator Merch, Done For You',
     description: 'Your audience wants to wear your vibe. We make that happen.',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon:
-      "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231aab78'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='14' fill='%23080808'>FK</text></svg>",
+      "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FF6B45'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='14' fill='%23FFF8F3'>FK</text></svg>",
   },
 }
 
@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.variable} ${dmSans.variable}`} suppressHydrationWarning>
+      <body className={`${nunito.variable} ${dmSans.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>
