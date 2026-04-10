@@ -17,7 +17,7 @@
   --charcoal-dim: #7A7068;
   --charcoal-faint: #EDE5DC;
   --green: #1A3C2E;
-  --display: "Nunito", sans-serif;
+  --display: "Plus Jakarta Sans", sans-serif;
   --body: "DM Sans", sans-serif;
 }
 
@@ -53,9 +53,9 @@ nav {
 
 .nav-logo {
   font-family: var(--display);
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   color: var(--charcoal);
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ nav {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
   transition: color 0.2s;
 }
 
@@ -171,11 +171,12 @@ nav {
 
 .hero-headline {
   font-family: var(--display);
-  font-size: clamp(64px, 10vw, 140px);
-  line-height: 0.95;
-  letter-spacing: -0.01em;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--charcoal);
   max-width: 900px;
+  font-weight: 800;
   animation: fadeUp 0.7s 0.1s ease both;
 }
 
@@ -215,10 +216,10 @@ nav {
   transition:
     background 0.2s,
     transform 0.15s;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
   border: none;
   cursor: pointer;
-  font-family: var(--body);
+  font-family: var(--display);
 }
 
 .btn-primary:hover {
@@ -241,8 +242,8 @@ nav {
     color 0.2s;
   background: transparent;
   cursor: pointer;
-  font-family: var(--body);
-  font-weight: 500;
+  font-family: var(--display);
+  font-weight: 600;
 }
 
 .btn-secondary:hover {
@@ -301,7 +302,7 @@ nav {
   font-family: var(--display);
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--green);
   padding: 0 32px;
   display: flex;
@@ -353,10 +354,10 @@ section {
 
 .section-headline {
   font-family: var(--display);
-  font-size: clamp(40px, 6vw, 80px);
-  line-height: 0.97;
-  letter-spacing: -0.01em;
-  font-weight: 800;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
   color: var(--charcoal);
   max-width: 700px;
 }
@@ -449,7 +450,7 @@ section {
 .how-visual {
   background: var(--cream);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 40px;
   position: relative;
   overflow: hidden;
@@ -548,7 +549,7 @@ section {
 .why-card {
   background: var(--cream);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 40px 32px;
   box-shadow: 0 2px 12px rgba(45, 45, 45, 0.05);
   transition:
@@ -605,7 +606,7 @@ section {
 .niche-card {
   background: var(--cream-2);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 28px 24px;
   transition:
     border-color 0.3s,
@@ -645,7 +646,7 @@ section {
 .price-card {
   background: var(--cream);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 36px 32px;
   position: relative;
   transition:
@@ -704,7 +705,7 @@ section {
 .price-amount {
   font-family: var(--display);
   font-size: 52px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--charcoal);
   line-height: 1;
@@ -772,7 +773,7 @@ section {
 .number-cell {
   background: var(--cream);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 40px 32px;
   box-shadow: 0 2px 12px rgba(45, 45, 45, 0.04);
 }
@@ -780,7 +781,7 @@ section {
 .number-big {
   font-family: var(--display);
   font-size: 52px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--charcoal);
   line-height: 1;
@@ -807,10 +808,10 @@ section {
 
 .cta-headline {
   font-family: var(--display);
-  font-size: clamp(52px, 8vw, 110px);
-  font-weight: 900;
-  line-height: 0.95;
-  letter-spacing: -0.01em;
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   color: var(--cream);
   position: relative;
   margin-bottom: 28px;
@@ -949,10 +950,10 @@ footer {
 
 .not-found-headline {
   font-family: var(--display);
-  font-size: clamp(72px, 12vw, 180px);
-  font-weight: 900;
-  line-height: 0.92;
-  letter-spacing: -0.01em;
+  font-size: clamp(52px, 9vw, 120px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   color: var(--charcoal);
   max-width: 900px;
   margin-top: 32px;
@@ -1110,7 +1111,7 @@ footer {
 .store-frame {
   background: var(--cream);
   border: 1px solid var(--charcoal-faint);
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   max-width: 660px;
   width: 100%;

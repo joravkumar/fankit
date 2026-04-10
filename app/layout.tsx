@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Nunito, DM_Sans } from 'next/font/google'
+import { Plus_Jakarta_Sans, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const nunito = Nunito({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['700', '800', '900'],
-  variable: '--font-nunito',
+  weight: ['600', '700', '800'],
+  variable: '--font-jakarta',
   display: 'swap',
 })
 
@@ -55,7 +55,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${dmSans.variable}`} suppressHydrationWarning>
+      <body className={`${plusJakarta.variable} ${dmSans.variable}`} suppressHydrationWarning>
         {children}
       </body>
     </html>
