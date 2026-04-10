@@ -87,7 +87,7 @@ export default function OGImage() {
           {[
             { num: '60%', label: 'Revenue yours' },
             { num: '5', label: 'Days to go live' },
-            { num: '₹0', label: 'Setup cost' },
+            { num: 'Rs 0', label: 'Setup cost' },
           ].map((stat) => (
             <div key={stat.num} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
               <div style={{ fontSize: 36, fontWeight: 700, color: '#f0ede8', display: 'flex' }}>
