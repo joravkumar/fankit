@@ -1063,7 +1063,6 @@ footer {
   }
   .number-big {
     font-size: 28px;
-    word-break: break-word;
   }
   .number-label {
     font-size: 12px;
@@ -1303,4 +1302,16 @@ footer {
 
 @media (max-width: 600px) {
   .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .numbers-grid {
+    grid-template-columns: 1fr;
+  }
+  .number-big {
+    font-size: 40px;
+  }
+  .niche-grid {
+    grid-template-columns: 1fr;
+  }
 }
