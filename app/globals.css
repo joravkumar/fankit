@@ -25,6 +25,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: var(--cream);
   color: var(--charcoal);
@@ -1022,6 +1026,10 @@ footer {
     grid-template-columns: 1fr;
     gap: 48px;
   }
+  .how-visual {
+    max-width: 100%;
+    overflow: hidden;
+  }
   .why-grid {
     grid-template-columns: 1fr;
   }
@@ -1036,6 +1044,10 @@ footer {
   }
   .hero-stats {
     gap: 28px;
+    justify-content: flex-start;
+  }
+  .store-frame {
+    max-width: 100%;
   }
   footer {
     flex-direction: column;
@@ -1043,6 +1055,9 @@ footer {
   }
   .cta-section {
     padding: 80px 24px;
+  }
+  .cta-form {
+    max-width: 100%;
   }
 }
 
