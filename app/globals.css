@@ -1043,11 +1043,31 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero-stats {
-    gap: 28px;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    justify-content: unset;
+  }
+  .stat-num {
+    font-size: 32px;
+  }
+  .split-pct {
+    font-size: 24px;
+  }
+  .split-row {
+    padding: 14px 0;
+  }
+  .numbers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .number-big {
+    font-size: 36px;
   }
   .store-frame {
     max-width: 100%;
+  }
+  .store-products {
+    grid-template-columns: 1fr 1fr;
   }
   footer {
     flex-direction: column;
@@ -1058,6 +1078,9 @@ footer {
   }
   .cta-form {
     max-width: 100%;
+  }
+  .footer-links {
+    gap: 16px;
   }
 }
 
