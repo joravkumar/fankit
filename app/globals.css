@@ -1039,9 +1039,6 @@ footer {
   .pricing-grid {
     grid-template-columns: 1fr;
   }
-  .numbers-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .hero-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1059,9 +1056,17 @@ footer {
   }
   .numbers-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .number-cell {
+    padding: 24px 18px;
   }
   .number-big {
-    font-size: 36px;
+    font-size: 28px;
+    word-break: break-word;
+  }
+  .number-label {
+    font-size: 12px;
   }
   .store-frame {
     max-width: 100%;
