@@ -1,10 +1,8 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 export default function Home() {
-  const splitFillRef = useRef<HTMLDivElement>(null)
-  const howVisualRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     // Intersection Observer for reveal animations
@@ -88,25 +86,31 @@ export default function Home() {
       const item = btn.parentElement
       if (!item) return
       const isOpen = item.classList.contains('open')
-      document.querySelectorAll('.faq-item').forEach((i) => i.classList.remove('open'))
-      if (!isOpen) item.classList.add('open')
+      document.querySelectorAll('.faq-item').forEach((i) => {
+        i.classList.remove('open')
+        i.querySelector('.faq-q')?.setAttribute('aria-expanded', 'false')
+      })
+      if (!isOpen) {
+        item.classList.add('open')
+        btn.setAttribute('aria-expanded', 'true')
+      }
     }
 
     document
       .querySelectorAll('.faq-q')
       .forEach((btn) => btn.addEventListener('click', handleFaqClick))
 
-    // CTA form — builds WhatsApp message and opens chat
+    // CTA form — builds email message
     const ctaForm = document.getElementById('ctaForm') as HTMLFormElement | null
     const handleCtaSubmit = (e: Event) => {
       e.preventDefault()
       const name = (document.getElementById('ctaName') as HTMLInputElement)?.value.trim()
       const handle = (document.getElementById('ctaHandle') as HTMLInputElement)?.value.trim()
-      const phone = (document.getElementById('ctaPhone') as HTMLInputElement)?.value.trim()
-      const msg = encodeURIComponent(
-        `Hi FanKit! I'd love a free merch mockup.\n\nName: ${name}\nInstagram: ${handle}${phone ? '\nPhone: ' + phone : ''}`,
+      const subject = encodeURIComponent('Free Merch Mockup Request')
+      const body = encodeURIComponent(
+        `Hi FanKit! I'd love a free merch mockup.\n\nName: ${name}\nInstagram: ${handle}`,
       )
-      window.open(`https://wa.me/91XXXXXXXXXX?text=${msg}`, '_blank')
+      window.open(`mailto:hello@fankit.in?subject=${subject}&body=${body}`, '_blank')
     }
 
     ctaForm?.addEventListener('submit', handleCtaSubmit)
@@ -176,7 +180,7 @@ export default function Home() {
 
       {/* ─── HERO ─── */}
       <section className="hero">
-        <div className="hero-eyebrow">made with love for indian creators ✨</div>
+        <div className="hero-eyebrow">Made with love for Indian creators ✨</div>
         <h1 className="hero-headline">
           LET&apos;S TURN<br />YOUR AUDIENCE<br />INTO YOUR<br /><span className="accent">BIGGEST FANS.</span>
         </h1>
@@ -310,16 +314,16 @@ export default function Home() {
                 <div className="step-desc">
                   Orders come in. We print, pack, and ship. You get 60% of every
                   sale deposited by the 5th of every month. Weekly earnings
-                  update on WhatsApp. 🎉
+                  update on email. 🎉
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="how-visual reveal" ref={howVisualRef}>
+          <div className="how-visual reveal">
             <div className="split-label">Revenue split per order</div>
             <div className="split-bar">
-              <div className="split-fill" id="splitFill" ref={splitFillRef}></div>
+              <div className="split-fill" id="splitFill"></div>
             </div>
             <div className="split-row">
               <div>
@@ -418,7 +422,7 @@ export default function Home() {
             <div className="why-title">Weekly Reports</div>
             <div className="why-desc">
               Every Monday you get your order count, total earnings, and
-              top-selling product on WhatsApp. No dashboard needed. 😊
+              top-selling product on email. No dashboard needed. 😊
             </div>
           </div>
           <div className="why-card">
@@ -601,7 +605,7 @@ export default function Home() {
             <div className="price-feature">8 custom product designs</div>
             <div className="price-feature">Custom domain (<span className="domain-pill">merch.<em>yourname</em>.in</span>)</div>
             <div className="price-feature">Product photography mockups</div>
-            <div className="price-feature">Weekly WhatsApp earnings report</div>
+            <div className="price-feature">Weekly email earnings report</div>
             <div className="price-feature">Seasonal drop reminders (IPL, Diwali)</div>
             <div className="price-split">60% yours</div>
             <div className="price-split-label">revenue split, always</div>
@@ -618,7 +622,7 @@ export default function Home() {
             <div className="price-feature">Performance analytics reporting</div>
             <div className="price-feature">Priority design turnaround</div>
             <div className="price-feature">Custom packaging design</div>
-            <div className="price-feature">Dedicated WhatsApp support</div>
+            <div className="price-feature">Dedicated email support</div>
             <div className="price-split">65% yours</div>
             <div className="price-split-label">you keep more at premium 🎉</div>
           </div>
@@ -631,27 +635,27 @@ export default function Home() {
         <h2 className="section-headline reveal">Good questions.<br />Straight answers. 👋</h2>
         <div className="faq-list reveal">
           <div className="faq-item">
-            <button className="faq-q">What if my store gets zero sales? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">What if my store gets zero sales? <span className="faq-icon">+</span></button>
             <div className="faq-a">We&apos;re in this together — we only earn when you earn. 40% of each sale is ours, and if nothing sells, you owe nothing. That&apos;s why we&apos;re selective about who we take on: we only work with creators whose audience is already engaged.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">Who handles returns and complaints? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">Who handles returns and complaints? <span className="faq-icon">+</span></button>
             <div className="faq-a">We do. You never deal with a single customer complaint, return request, or shipping issue. We handle it all and keep you updated weekly. Your job is to post content, not run a fulfilment centre.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">What about GST and taxes? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">What about GST and taxes? <span className="faq-icon">+</span></button>
             <div className="faq-a">We handle GST filing on all orders. You receive your 60% earnings as a clean payout by the 5th of every month. We&apos;ll share a simple monthly statement for your own records.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">Can I see what my merch will look like before going live? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">Can I see what my merch will look like before going live? <span className="faq-icon">+</span></button>
             <div className="faq-a">Yes. Before anything is published, we&apos;ll share high-quality mockups of every product. You approve the designs, request changes, and only go live when you&apos;re happy. No surprises.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">What&apos;s the minimum follower count to apply? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">What&apos;s the minimum follower count to apply? <span className="faq-icon">+</span></button>
             <div className="faq-a">We don&apos;t have a strict follower minimum — we care more about engagement than reach. A creator with 10K highly engaged followers will outsell one with 200K passive ones. DM us and we&apos;ll tell you honestly if we think it&apos;ll work.</div>
           </div>
           <div className="faq-item">
-            <button className="faq-q">Do I need to hold any stock? <span className="faq-icon">+</span></button>
+            <button className="faq-q" aria-expanded="false">Do I need to hold any stock? <span className="faq-icon">+</span></button>
             <div className="faq-a">Never. Every item is printed and shipped only when an order comes in. No inventory, no upfront stock cost, no risk. You couldn&apos;t end up sitting on unsold boxes even if you tried.</div>
           </div>
         </div>
@@ -668,16 +672,17 @@ export default function Home() {
         </p>
         <form className="cta-form" id="ctaForm">
           <div className="form-row">
+            <label htmlFor="ctaName" className="sr-only">Your name</label>
             <input className="cta-input" type="text" id="ctaName" placeholder="Your name" required />
+            <label htmlFor="ctaHandle" className="sr-only">Instagram handle</label>
             <input className="cta-input" type="text" id="ctaHandle" placeholder="@instagram handle" required />
           </div>
-          <input className="cta-input" type="tel" id="ctaPhone" placeholder="WhatsApp number" />
           <button type="submit" className="btn-primary" style={{width: '100%', justifyContent: 'center'}}>Get my free mockup →</button>
-          <p className="cta-form-note">We&apos;ll reply within 24 hours on WhatsApp or Instagram.</p>
+          <p className="cta-form-note">We&apos;ll reply within 24 hours on email or Instagram.</p>
         </form>
         <div className="cta-actions">
           <a href="https://instagram.com/fankit.in" target="_blank" rel="noopener noreferrer" className="btn-secondary">DM on Instagram</a>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp us</a>
+          <a href="mailto:hello@fankit.in" className="btn-secondary">Email us</a>
         </div>
       </section>
 
@@ -694,7 +699,7 @@ export default function Home() {
             </a>
           </li>
         </ul>
-        <div className="footer-copy">© 2026 FanKit. made with love in India. 🧡</div>
+        <div className="footer-copy">© 2026 FanKit. Made with love in India. 🧡</div>
       </footer>
     </>
   )

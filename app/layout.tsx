@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "FanKit — Creator Merch, Done For You",
@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FanKit: Creator Merch, Done For You",
     description: "Your audience wants to wear your vibe. We make that happen.",
+    images: ["/preview.png"],
+  },
+  alternates: {
+    canonical: "https://fankit.in",
   },
   icons: {
     icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23FF4D6D'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='14' fill='%23FFF8F3'>FK</text></svg>",
