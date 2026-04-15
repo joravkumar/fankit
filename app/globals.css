@@ -22,10 +22,10 @@
   --cream: #FFF8F3;
   --cream-2: #FFF0E8;
   --cream-3: #FFE8D8;
-  --coral: #FF4D6D;
-  --coral-dim: #E03A5A;
-  --coral-glow: rgba(255, 77, 109, 0.12);
-  --charcoal: #2D2D2D;
+  --crimson: #C41E3A;
+  --crimson-dim: #A01830;
+  --crimson-glow: rgba(196, 30, 58, 0.1);
+  --charcoal: #1A1A1A;
   --charcoal-dim: #7A7068;
   --charcoal-faint: #EDE5DC;
   --green: #1A3C2E;
@@ -77,7 +77,7 @@ nav {
 }
 
 .nav-logo span {
-  color: var(--coral);
+  color: var(--crimson);
 }
 
 .nav-links {
@@ -100,7 +100,7 @@ nav {
 }
 
 .nav-cta {
-  background: var(--coral);
+  background: var(--crimson);
   color: var(--cream) !important;
   padding: 9px 22px;
   border-radius: 100px;
@@ -114,7 +114,7 @@ nav {
 }
 
 .nav-cta:hover {
-  background: var(--coral-dim) !important;
+  background: var(--crimson-dim) !important;
   transform: translateY(-1px);
   color: var(--cream) !important;
 }
@@ -139,7 +139,7 @@ nav {
   height: 700px;
   background: radial-gradient(
     circle,
-    rgba(255, 107, 69, 0.08) 0%,
+    rgba(196, 30, 58, 0.07) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -149,9 +149,9 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--coral-glow);
-  border: 1px solid rgba(255, 107, 69, 0.3);
-  color: var(--coral);
+  background: var(--crimson-glow);
+  border: 1px solid rgba(196, 30, 58, 0.25);
+  color: var(--crimson);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -166,7 +166,7 @@ nav {
   content: "";
   width: 6px;
   height: 6px;
-  background: var(--coral);
+  background: var(--crimson);
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
@@ -195,7 +195,7 @@ nav {
 }
 
 .hero-headline .accent {
-  color: var(--coral);
+  color: var(--crimson);
 }
 
 .hero-sub {
@@ -217,7 +217,7 @@ nav {
 }
 
 .btn-primary {
-  background: var(--coral);
+  background: var(--crimson);
   color: var(--cream);
   padding: 16px 36px;
   border-radius: 100px;
@@ -237,7 +237,7 @@ nav {
 }
 
 .btn-primary:hover {
-  background: var(--coral-dim);
+  background: var(--crimson-dim);
   transform: translateY(-2px);
 }
 
@@ -285,7 +285,7 @@ nav {
   line-height: 1;
 }
 .stat-num span {
-  color: var(--coral);
+  color: var(--crimson);
 }
 .stat-label {
   font-size: 13px;
@@ -325,7 +325,7 @@ nav {
 .marquee-dot {
   width: 5px;
   height: 5px;
-  background: var(--coral);
+  background: var(--crimson);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -349,7 +349,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--coral);
+  color: var(--crimson);
   margin-bottom: 16px;
   display: flex;
   align-items: center;
@@ -360,7 +360,7 @@ section {
   content: "";
   width: 24px;
   height: 2px;
-  background: var(--coral);
+  background: var(--crimson);
   display: inline-block;
 }
 
@@ -429,7 +429,7 @@ section {
   font-family: var(--display);
   font-size: 48px;
   font-weight: 800;
-  color: var(--coral);
+  color: var(--crimson);
   line-height: 1;
   flex-shrink: 0;
   width: 60px;
@@ -438,7 +438,7 @@ section {
 }
 
 .step:hover .step-num {
-  color: var(--coral-dim);
+  color: var(--crimson-dim);
   opacity: 1;
 }
 
@@ -486,7 +486,7 @@ section {
 
 .split-fill {
   height: 100%;
-  background: var(--coral);
+  background: var(--crimson);
   border-radius: 100px;
   width: 0;
   transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
@@ -543,9 +543,9 @@ section {
 }
 
 .tag.active {
-  background: var(--coral-glow);
-  border-color: rgba(255, 107, 69, 0.4);
-  color: var(--coral);
+  background: var(--crimson-glow);
+  border-color: rgba(196, 30, 58, 0.35);
+  color: var(--crimson);
 }
 
 /* ─── WHY ─── */
@@ -569,14 +569,14 @@ section {
 
 .why-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 107, 69, 0.35);
+  border-color: rgba(196, 30, 58, 0.3);
 }
 
 .why-icon {
   width: 44px;
   height: 44px;
-  background: var(--coral-glow);
-  border: 1px solid rgba(255, 107, 69, 0.3);
+  background: var(--crimson-glow);
+  border: 1px solid rgba(196, 30, 58, 0.25);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -625,7 +625,7 @@ section {
 }
 
 .niche-card:hover {
-  border-color: rgba(255, 107, 69, 0.4);
+  border-color: rgba(196, 30, 58, 0.35);
   transform: translateY(-3px);
 }
 
@@ -670,11 +670,11 @@ section {
 }
 
 .price-card.featured {
-  border-color: var(--coral);
+  border-color: var(--crimson);
   background: linear-gradient(
     135deg,
     var(--cream) 0%,
-    var(--coral-glow) 100%
+    var(--crimson-glow) 100%
   );
 }
 
@@ -683,7 +683,7 @@ section {
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--coral);
+  background: var(--crimson);
   color: var(--charcoal);
   font-size: 11px;
   font-weight: 700;
@@ -747,7 +747,7 @@ section {
 
 .price-feature::before {
   content: "✓";
-  color: var(--coral);
+  color: var(--crimson);
   font-size: 13px;
   flex-shrink: 0;
   margin-top: 1px;
@@ -757,7 +757,7 @@ section {
   font-family: var(--display);
   font-size: 20px;
   font-weight: 800;
-  color: var(--coral);
+  color: var(--crimson);
   letter-spacing: 0.01em;
   margin-top: 20px;
 }
@@ -799,7 +799,7 @@ section {
 }
 
 .number-big span {
-  color: var(--coral);
+  color: var(--crimson);
 }
 .number-label {
   font-size: 13px;
@@ -811,7 +811,7 @@ section {
 .cta-section {
   text-align: center;
   padding: 120px 40px;
-  background: var(--coral);
+  background: var(--crimson);
   position: relative;
   overflow: hidden;
 }
@@ -888,7 +888,7 @@ footer {
 }
 
 .footer-logo span {
-  color: var(--coral);
+  color: var(--crimson);
 }
 
 .footer-links {
@@ -920,9 +920,9 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 1px;
-  background: var(--coral-glow);
-  border: 1px solid rgba(255, 107, 69, 0.35);
-  color: var(--coral);
+  background: var(--crimson-glow);
+  border: 1px solid rgba(196, 30, 58, 0.3);
+  color: var(--crimson);
   font-family: "SF Mono", "Fira Code", monospace;
   font-size: 0.88em;
   padding: 1px 7px 2px;
@@ -954,7 +954,7 @@ footer {
   right: -200px;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(255, 107, 69, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(196, 30, 58, 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -970,7 +970,7 @@ footer {
 }
 
 .not-found-headline .accent {
-  color: var(--coral);
+  color: var(--crimson);
 }
 
 .not-found-sub {
@@ -1137,12 +1137,12 @@ footer {
   text-decoration: none;
   transition: color 0.2s;
 }
-.mobile-menu a:hover { color: var(--coral); }
+.mobile-menu a:hover { color: var(--crimson); }
 .mobile-menu .mobile-cta {
   font-family: var(--body);
   font-size: 16px;
   font-weight: 600;
-  background: var(--coral);
+  background: var(--crimson);
   color: var(--cream) !important;
   padding: 14px 36px;
   border-radius: 100px;
@@ -1188,7 +1188,7 @@ footer {
   color: var(--charcoal-dim);
   font-family: "SF Mono", "Fira Code", monospace;
 }
-.store-url em { font-style: normal; color: var(--coral); }
+.store-url em { font-style: normal; color: var(--crimson); }
 .store-body { padding: 28px 28px 32px; }
 .store-brand {
   font-family: var(--display);
@@ -1208,14 +1208,14 @@ footer {
   text-align: center;
   transition: border-color 0.2s;
 }
-.store-product:hover { border-color: rgba(255, 107, 69, 0.4); }
+.store-product:hover { border-color: rgba(196, 30, 58, 0.35); }
 .store-product-icon { font-size: 30px; margin-bottom: 10px; }
 .store-product-name { font-size: 12px; font-weight: 600; color: var(--charcoal); margin-bottom: 3px; }
-.store-product-price { font-size: 11px; color: var(--coral); font-weight: 600; }
+.store-product-price { font-size: 11px; color: var(--crimson); font-weight: 600; }
 .store-product-btn {
   display: block;
   margin-top: 10px;
-  background: var(--coral);
+  background: var(--crimson);
   color: var(--cream);
   font-size: 10px;
   font-weight: 700;
@@ -1257,7 +1257,7 @@ footer {
 }
 .faq-icon {
   font-size: 22px;
-  color: var(--coral);
+  color: var(--crimson);
   flex-shrink: 0;
   transition: transform 0.3s;
   line-height: 1;

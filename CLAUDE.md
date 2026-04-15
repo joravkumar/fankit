@@ -41,8 +41,9 @@ Single-page app with scroll-based sections. All content is in `page.tsx` as a cl
 ## CSS Variables
 
 ```
---cream: #FFF8F3       --coral: #FF4D6D
---charcoal: #2D2D2D    --green: #1A3C2E
+--cream: #FFF8F3       --crimson: #C41E3A
+--charcoal: #1A1A1A    --green:   #1A3C2E
+--charcoal-dim: #7A7068  --charcoal-faint: #EDE5DC
 ```
 
 ## Key Conventions
